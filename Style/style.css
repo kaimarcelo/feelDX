@@ -61,6 +61,7 @@ body {
     text-align: center;
     margin-right: 10px;
     background-color: #86906C;
+    text-align: center;
 }
 .btn-3:hover {
     color: #86906C;
@@ -297,6 +298,42 @@ body {
     text-align: center;
     font-size: 30px;
 }
+.footer {
+    background-color: #6A764B;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.socials, .quick-links, .contact-numbers {
+    min-height: 200px;
+    padding: 20px;
+}
+.quick-links ul, .contact-numbers ul{
+    list-style-type: none;
+}
+.quick-links ul a, .contact-numbers ul a {    
+    text-decoration: none;
+    color: #86906C;
+}
+.quick-links ul a:hover, .contact-numbers ul a:hover {    
+    text-decoration: none;
+    color: #bdc7a2;
+}
+.sma a {
+    color: #86906C;
+}
+.sma a:hover {
+    color: #bdc7a2;
+}
+.ul-heading {
+    color: #bdc7a2;
+    font-weight: 500;
+}
 @media only screen and (max-width: 900px) {
   .nav-items, .contact {
     display: none;
@@ -313,6 +350,7 @@ body {
   .nav-item a{
     text-decoration: none;
     color: #6A764B;
+    padding-left: 10px;
   }
   .header-logo {
     padding-left: 20px;
@@ -349,5 +387,12 @@ body {
   }
   .hero-btns a {
     margin: 5px;
+  }
+  .btn-contact {
+    margin: 10px 0;
+    color: white !important;
+  }
+  .footer {
+    justify-content: start;
   }
 }
