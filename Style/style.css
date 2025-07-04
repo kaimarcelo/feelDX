@@ -393,6 +393,11 @@ body {
     color: white !important;
   }
   .footer {
+    flex-direction: column;
     justify-content: start;
+  }
+  .footer .socials {
+    height: 80px;
+    align-self: center;
   }
 }
