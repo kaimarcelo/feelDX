@@ -22,6 +22,9 @@ body {
     color: black;
     padding: 0 10px 0 0;
 }
+.responsive-nav {
+    display: none;
+}
 .btn-1 {
     border: 1px solid white;
     padding: 8px 20px;
@@ -66,7 +69,7 @@ body {
 .hero-section {
     /* position: relative;
     top: 80px; */
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
 }
 .hero-text {
@@ -104,6 +107,7 @@ body {
     overflow: hidden;
 }
 .carousel-item img {
+    width: 70%;
     height: 100%;
     object-fit: cover;
 }
@@ -166,22 +170,22 @@ body {
 }
 .learn-more-section {
     min-height: calc(100vh - 80px);
+    display: flex;
     /* background-color: #F5F7F2; */
 }
 .learn-more-container {
-    margin: 0 auto;
+    align-items: center;
     max-width: 900px;
-    height: 570px;
+    min-height: 570px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    position: relative;
-    top: 150px;
+    margin: 50px auto;
 }
 .technology {
     max-width: 450px;
-    height: inherit;
-    padding: 50px 30px;
+    min-height: 570;
+    padding: 0 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -225,6 +229,7 @@ body {
     text-align: center;
     margin: 20px auto;
     color: #d3ddb9;
+    padding: 0 50px;
 
 }
 .services-container {
@@ -274,6 +279,75 @@ body {
     color: #F5F7F2;
 }
 .clients {
-    min-height: calc(100vh);
-    background-color: green;
+    min-height: 500px;
+}
+.clients-media {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+.clients img {
+    width: 120px;
+    margin: 20px;
+}
+.clients-heading {
+    color: #6A764B;
+    text-align: center;
+    font-size: 30px;
+}
+@media only screen and (max-width: 900px) {
+  .nav-items, .contact {
+    display: none;
+  }
+  .nav {
+    justify-content: space-between;
+  }
+  .responsive-nav {
+    display: inline;
+  }
+  .navbar-toggle-icon {
+    color: black;
+  }
+  .nav-item a{
+    text-decoration: none;
+    color: #6A764B;
+  }
+  .header-logo {
+    padding-left: 20px;
+  }
+  .why-us-intro {
+    display: none !important; 
+  }
+  .hero-section {
+    flex-direction: column-reverse;
+  }
+  .hero-section  .carousel-container {
+    /* left: 0; */
+    width: 100%;
+    height: 500px;
+    position: static;
+  }
+  .hero-section .hero-text {
+    width: 100% !important;
+    position: static;
+  }
+  .learn-more-media {
+    width: 100%;
+  }
+  .services-container .container {
+    margin: 0;
+  }
+  .why-us-container div {
+    margin: 5px 0 0 0;
+  }
+  .hero-btns {
+    display: flex;
+    flex-direction: column !important;
+    margin: auto;
+  }
+  .hero-btns a {
+    margin: 5px;
+  }
 }
