@@ -1,0 +1,10 @@
+.nav {
+    z-index: 1;
+}
+.nav-content {
+    display: flex;
+}
+.nav-list {
+    list-style-type: none;
+    display: flex;
+}
